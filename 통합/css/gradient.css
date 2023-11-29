@@ -1,0 +1,47 @@
+/* linear-gradient(각도, 색(위치%) 색2 색3 (위치%) */
+/* radial-gradient(형태 사이즈 at 가로지점 세로지점, 색, 색) */
+/* repeating-linear-gradient(각도, 색 크기, 색 크기) */
+
+
+article{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*중앙 정렬*/
+
+    flex-direction: column; 
+    /*텍스트정렬을 상에서 하로가게함*/
+
+    width: 40%; margin: 0px auto;
+}
+
+.g-1{
+    width: 600px; 
+    height: 200px;
+    /*텍스처가 들어간 영역을 넓히기 위한 크기설정 */
+    background: linear-gradient(90deg, red 0%, yellow 100%); 
+    /* 그라데이션 linear-gradient(각도, 색(위치%) 색2 색3 (위치%) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-2{
+    height: 200px;
+    /* background: radial-gradient(circle 200px at center, red , yellow , blue ); */
+     /* radial-gradient(형태 사이즈 at 가로지점 세로지점, 색, 색) */
+
+    
+    background: radial-gradient(closest-side at 30% 30%, red , yellow , blue );
+    /*기준점과 가까운 가로 세로면의 크기*/
+    /* background: radial-gradient(farthest-side at 30% 30%, red , yellow , blue ); */
+    /*기준점과 먼 가로 세로면의 크기*/
+
+}
+
+.g-3{
+    height: 200px;
+    background:repeating-linear-gradient(45deg, red 0px, yellow 20px)
+    /*반복되는 linear*/
+}

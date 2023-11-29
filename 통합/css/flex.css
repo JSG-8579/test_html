@@ -1,0 +1,151 @@
+
+body{margin:0;}
+
+
+.spot{
+    width:100%;
+    height:100vh;
+    background: url('../image/Rectangle\ 2.jpg') 0 0 / cover no-repeat;
+    color:white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+}
+.spot > b{
+    font-size:4rem;
+    transition: 1s;
+}
+.spot > b:hover{letter-spacing: 20px;}
+.spot > p{
+    font-size:1rem;
+}
+
+
+
+*{box-sizing: border-box;}
+a{text-decoration: none;}
+
+header{
+    padding:40px 10%;
+    display: flex;
+    align-items: center; /*세로 축을 기준으로 상하에 대한 정렬*/
+    justify-content: space-between; /*가로 축을 기준으로 좌우에 대한 정렬*/
+
+    position: fixed;
+    left:0; top:0;
+    width:100%;    
+    
+}
+header > h1{}
+header > h1 > a{color:white;}
+
+header > nav{}
+header > nav > a{color:white; padding:0 20px;}
+header > nav > a:hover{
+    text-decoration: line-through;
+}
+
+header > div{}
+header > div > a{
+    color:white;
+    border:1px solid rgba(255,255,255,0.3);
+    padding:20px 30px;
+    transition: 0.5s;
+}
+header > div > a:hover{
+    background-color: aquamarine;   
+}
+
+
+main{width:80%; margin:100px auto;}
+
+.swiper{}
+.swiper-wrapper{display: flex;}
+.swiper-slide{
+    width: 20%;
+    flex-shrink: 0;
+    margin: 0;
+}
+.swiper-slide > p{}
+.swiper-slide > p > img{width:100%;}
+
+.swiper-slide > figcaption{}
+.swiper-slide > figcaption > p{
+    white-space: nowrap; /* 텍스트 한줄로 모으기 */
+    overflow: hidden; /* 길이가 초과하면 생략하게 설정*/
+    text-overflow: ellipsis; /* .. 으로 생략표시*/
+}
+.swiper-slide > figcaption > code{}
+
+.news-list{
+    display: flex;
+    justify-content:  space-between;
+    flex-wrap: wrap;
+    margin-top: 100px 0;
+
+
+}
+.news-list > figure{
+    width: 23%; margin: 0;
+    position: relative;
+}
+.news-list > figure > p{
+    overflow: hidden; /* 지정된 사이즈에 오버된걸 감춰줌*/
+}
+.news-list > figure > p > img{
+    transition: 0.5s; /* 반응 속도 */
+    width: 100%;
+    vertical-align: middle; /* 이미지의 여백을 없애줌(세로만)*/
+}
+
+.news-list > figure:hover > p > img{ /* hover 마우스를 갖다 놓으면 실행 */
+    transform: scale(1.2) /* 120% 로 확대*/
+}
+
+.news-list > figure > figcaption > p:nth-child(1){
+    position: absolute;
+    font-size: 20px;
+    bottom: 16px;
+    transition: 0.1s;
+    opacity: 1;
+}
+
+.news-list > figure > figcaption > p:nth-child(2){
+    
+
+    display: -webkit-box;
+    /* 세로,가로 정렬을 사용 가능 flex보다 약해서 잘 안쓰이지만 -webkit-line-clamp를 쓰기위한 코딩*/
+    -webkit-line-clamp: 2; /* 2줄로 생략 가능 */
+    -webkit-box-orient: vertical; /*세로기준*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(204, 195, 195, 0.5);
+
+    bottom: 16px;
+    transition: 0.1s;
+
+}
+
+.news-list > figure > figcaption >p:nth-child(2):hover{
+    transform: scale(1);
+    opacity: 0;
+}
+
+.news-list > figure > figcaption >p:nth-child(2):hover{
+    transform: scale(1);
+
+    position: absolute;
+    opacity: 1;
+    height: 50%;
+    background-color: rgba(204, 195, 195, 0.5);
+    color: white;
+
+    bottom: 16px;
+}
+
