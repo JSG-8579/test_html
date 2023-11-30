@@ -1,0 +1,344 @@
+@import url('reset.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+
+body {
+    color: rgb(53, 33, 33);
+    font-weight: bold;
+
+}
+
+header,
+main,
+.spot,
+main {
+    width: 1536px;
+    margin: 0 auto;
+}
+
+header>h1>a {
+    color: #58412A;
+
+    font-family: 'Prociono';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    width: 50%;
+
+}
+
+header>nav>a {
+    text-decoration-line: none;
+    font-family: 'pretendard';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(88, 65, 42, 1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.spot {
+    width: 1536px;
+    height: 626px;
+    background: url(../image/1.jpg)0 0 / cover no-repeat;
+    max-width: 2560px;
+    padding: 0, px;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    flex-shrink: 0;
+}
+
+.spot>h2 {
+    color: #5E452D;
+
+    text-align: center;
+    font-family: 'Prociono';
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.spot>p {
+    color: #58412A;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+main {
+    width: 1536px;
+}
+
+main>h2 {
+    color: #58412A;
+
+    font-family: Prociono;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px
+}
+
+.img_list {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+}
+
+div>figure {
+    position: relative;
+}
+
+div>figure>figcaption {
+    background-color: #EEE7E1;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #58412A;
+
+    text-align: center;
+    font-family: 'Pretendard';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+
+    justify-content: center;
+
+    top: 0;
+    transition: 1s;
+    opacity: 0;
+}
+
+div>figure>figcaption>h2 {
+    color: #5E452D;
+
+    text-align: center;
+    font-family: 'Prociono';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+div>figure:hover>figcaption {
+    opacity: 1;
+}
+
+div>figure>.img1_set:hover {
+    opacity: 1;
+}
+
+div>figure>figcaption>b {
+    font-size: 40px;
+}
+
+div>figure>figcaption>p {
+    font-size: 15px;
+}
+
+
+.mark_up {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.mark_up {
+    margin-left: 30px;
+}
+
+.mark_up_Text>h2 {
+    color: #58412A;
+
+    font-family: 'Prociono';
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87px;
+}
+
+.mark_up_Text>p {
+
+    flex-direction: column;
+    text-align: left;
+    color: #58412A;
+
+    font-family: 'Pretendard';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.mark_up_Text>p>span {
+    color: #58412A;
+
+    font-family: 'Pretendard';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 41px;
+
+}
+
+.mark_up_Text>h2>a {
+    text-decoration-line: underline;
+}
+
+.mark_up_Text2>h2 {
+    color: #58412A;
+    text-align: right;
+    font-family: 'Prociono';
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 87px;
+}
+
+
+
+.mark_up_Text2>p {
+
+    margin-left: 30px;
+    flex-direction: column;
+    text-align: right;
+    color: #58412A;
+
+    font-family: 'Pretendard';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.mark_up_Text2>p>span {
+    color: #58412A;
+
+    font-family: 'Pretendard';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 41px;
+
+}
+
+.mark_up_Text2>h2>a {
+    text-decoration-line: underline;
+}
+
+.footer {
+    background-color: #EEE7E1;
+    font-size: 10px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer_text1 {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.footer_text1>h1 {
+    color: #58412A;
+
+    font-family: 'Prociono';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 66.667% */
+    text-transform: uppercase;
+
+}
+
+.footer_text1>p {
+    color: #58412A;
+
+    font-family: 'Prociono';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+.footer2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 200px;
+}
+
+.footer2_text1>h2 {
+    color: #58412A;
+    font-family: 'Prociono';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    text-decoration-line: underline;
+}
+
+.footer2_text2>h2 {
+    color: #58412A;
+    font-family: 'Prociono';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+.footer2_text3>h2 {
+    font-family: 'Prociono';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer2>div {
+    padding: 50px;
+}
